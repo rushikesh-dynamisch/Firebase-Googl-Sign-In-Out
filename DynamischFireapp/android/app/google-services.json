@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "715059804222",
+    "project_id": "verificationapp-3f889",
+    "storage_bucket": "verificationapp-3f889.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715059804222:android:7dc914a41747d82285396f",
+        "android_client_info": {
+          "package_name": "com.dynamischfireapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715059804222-3n2qhf023em9tk58ma5d99og7d5ffoaq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dynamischfireapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "715059804222-nfve9fhp1aancui6gulocboo58ujr6q7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn9fca5KojQqL-G1NK2Qv61GJBKV8tRO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715059804222-nfve9fhp1aancui6gulocboo58ujr6q7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
