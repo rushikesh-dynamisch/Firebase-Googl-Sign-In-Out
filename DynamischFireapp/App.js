@@ -169,7 +169,7 @@ const App = () => {
 
       .signOut()
 
-      .then(() => console.log('User signed out!'))
+      .then(() => Alert.alert("Sign Out Successfully.!"))
 
       .catch(error => {
        console.log(error);
@@ -177,24 +177,81 @@ const App = () => {
 
   };
 
+  // return (
+  //   <View>
+     
+  //     <Button
+  //       title="Google Sign-In"
+  //       onPress={() => onGoogleButtonPress().then(() => console.log('Signed in with Google!'))}
+  //      style={styles.button} />
+     
+     
+  //     {/* <Text>Welcome {user.email}</Text> */}
+  //     <Button
+  //       title="Google Sign-Out"
+  //       onPress={() => SignOut()}
+  //     />
+    
+  //   </View>
+  // );
+
   return (
     <View>
-      <Text>firebase</Text>
-      <Button
-        title="Google Sign-In"
-        onPress={() => onGoogleButtonPress().then(() => console.log('Signed in with Google!'))}
-      />
-
+     
+      <TouchableOpacity
+      onPress={() => onGoogleButtonPress().then(() => Alert.alert("LogIn Succssfully!."))}
+       style={styles.Loginbtn} >
+        <Text style={styles.logintxt}>LOGIN</Text>
+      </TouchableOpacity>
      
       {/* <Text>Welcome {user.email}</Text> */}
-      <Button
+      <TouchableOpacity
         title="Google Sign-Out"
         onPress={() => SignOut()}
-      />
+      style={styles.Logoutbtn}>
+        <Text style={styles.logouttxt} >LOGOUT</Text>
+      </TouchableOpacity>
     
     </View>
   );
+
+
 }
+
+const styles = StyleSheet.create({
+    
+   Loginbtn: {
+      width:200,
+      height:50,
+      justifyContent:'center',
+      alignItems:'center',
+      borderWidth:0.5,
+      alignSelf :'center',
+      marginTop:50,
+     backgroundColor:'#24a0ed',
+     borderRadius:30
+     
+    },
+    Logoutbtn: {
+      width:200,
+      height:50,
+      justifyContent:'center',
+      alignItems:'center',
+      borderWidth:0.5,
+      alignSelf :'center',
+      marginTop:50,
+     backgroundColor:'#24a0ed',
+     borderRadius:30
+    },
+    logintxt:{
+      color:'white',
+      fontSize:20
+    },
+    logouttxt:{
+      color:'white',
+      fontSize:18
+    }
+  });
 
 export default App;
 
